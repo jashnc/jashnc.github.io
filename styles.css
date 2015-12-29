@@ -65,12 +65,12 @@ p {
 @media all and (max-width: 500px) {
 
 	.main {
-		width: 400px;
+		width: auto;
 	}
   .container {
     /* On small screens, we are no longer using row direction but column */
     flex-direction: column;
-    width: 400px;
+    width: auto;
     
   }
 }
