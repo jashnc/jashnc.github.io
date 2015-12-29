@@ -1,33 +1,28 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+	    <script type = "text/javascript" src="https://code.angularjs.org/1.5.0-rc.0/angular.min.js"></script>
+	    <script type = "text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular-route.min.js"></script>
+	    <script type = "text/javascript" src = "angular.js"></script>
+	 	<link rel="stylesheet" href="styles.css">
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+		<title>Jashn Chhaya</title>
+	</head>
+	<body ng-app="home">
+		
+		<div class = "main" ng-controller = "controller">
+			<h2 style = "text-align: center"><a href = "#/">Jashn Chhaya</a></h2>
+			<div ng-view>
+			</div>
+			
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+		</div>
 
-    {{ post.content }}
-  </article>
-  {% endfor %}
-</div>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+
+
+
+	</body>
+</html>

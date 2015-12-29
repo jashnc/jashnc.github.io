@@ -1,0 +1,75 @@
+.main {
+	height: 500px;
+	width: 800px;
+	margin: auto;
+	background: #6A9FB5;
+
+	color: white;
+	padding-top: 20px;
+}
+
+h2 {
+	font-family: "Abril Fatface", serif;
+	font-size: 2.25rem;
+}
+a:link {
+	text-decoration: none !important;
+}
+a:visited {
+	color: white;
+}
+a:hover{
+	color: black;
+}
+
+p {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.container {
+	color: rgba(255,255,255,.5);
+	font-family: "PT Sans", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+
+	list-style: none;
+	display: flex;
+	height: 400px;
+	align-items: center;
+	background: #6A9FB5;
+	flex-flow: row wrap;
+
+	  padding: 0;
+  margin: 0;
+
+  
+	  display: -webkit-box;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+	  display: -webkit-flex;
+	  display: flex;
+	  
+	  -webkit-flex-flow: row wrap;
+	  justify-content: space-around;
+}
+
+.item {
+
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	color: rgba(255, 255, 255, 0.5);;
+}
+
+@media all and (max-width: 500px) {
+
+	.main {
+		width: 400px;
+	}
+  .container {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+    width: 400px;
+    
+  }
+}
