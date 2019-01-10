@@ -4,53 +4,51 @@
 		<meta charset = "UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	 	<link rel="stylesheet" href="styles.css">
+	 	
+    <link href="//fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="lib/normalize.css">
+    <link rel="stylesheet" href="lib/milligram.min.css">
+    <link rel="stylesheet" href="styles.css">
 
 		<title>Jashn Chhaya</title>
 	</head>
-	<body>
-		<div class="bg">
-  <div class="mountain">
-    <div class="mountain-top">
-      <div class="mountain-cap-1"></div>
-      <div class="mountain-cap-2"></div>
-      <div class="mountain-cap-3"></div>
+
+	<body class = "bg-color">
+    <div class="container">
+      <div class="row row-center">
+        <div class="column text-center p-1">
+          <h2><strong>Hello, I'm <span class = "font-map-blue"> Jashn. </span></strong></h2>
+        </div>
+      </div>
+      <div class="row row-center justify-center">
+        <div class="column column-75 text-center p-1 bio">
+          <img class = "map" src="assets/img/Blank_map_world_rivers.png">
+        </div>
+      </div>
+      <div class="row row-center justify-center">
+        <div class="column column-33">
+          <p><em><strong>// I'm a software engineer @ Amazon in Seattle. </a>Find my resume <a href = "resume.pdf" target="_blank">here. </a></strong></em></p>
+        </div>
+      </div>
+      <div class="row row-center justify-center">
+        <div class="column column-33">
+          <p> My interests include technology, finance, and politics. I sometimes write about these things or the other <strong><em><a href = "/blog.html"> here. </a></em></strong> If you want to work together on something, or just want to say hi, feel free to shoot me an email at: 
+          <p class = "text-center"> <strong> j@iamjashn.com </strong></a></p>
+        </div>
+      </div>
+      <div class = "row row-center justify-center">
+        <div class = "column col-auto text-center"> 
+          <a href = "https://www.linkedin.com/in/jashn-chhaya-a27421b2/" target = "_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href = "https://www.github.com/jashnc" target = "_blank">
+            <img src="assets/img/GitHub-Mark-32px.png" height = "24" class = "pl-1">
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="mountain-two">
-    <div class="mountain-top">
-      <div class="mountain-cap-1"></div>
-      <div class="mountain-cap-2"></div>
-      <div class="mountain-cap-3"></div>
-    </div>
-  </div>
-   <div class="mountain-three">
-    <div class="mountain-top">
-      <div class="mountain-cap-1"></div>
-      <div class="mountain-cap-2"></div>
-      <div class="mountain-cap-3"></div>
-    </div>
-
-  </div>
-  <div class="cloud"></div>
-	<div class = "main" id = "app">
-		<h2 style = "text-align: center">Hi.</h2>
-
-		<p>I'm Jashn Chhaya. I'm a senior studying Computer Science at the University of Illinois at Urbana-Champaign. You can contact me at <b>jchhaya2@illinois.edu</b>.
-
-		<ul>
-			<li><a href = "resume.pdf" target="_blank">// résumé</a>
-			<li><a href = "http://github.com/jashnc">// projects</a>
-		</ul>
-
-
-	</div>
-</div>
-
-
 	</body>
 
-	<script type = "text/javascript" src ="https://unpkg.com/vue@next/dist/vue.js"></script>
 	<script type = "text/javascript" src = "main.js"></script>
 
 </html>
